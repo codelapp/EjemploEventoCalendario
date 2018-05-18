@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Eventos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmq-sS-Fhv">
+                                <rect key="frame" x="95" y="426" width="194" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="crear evento">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="crear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3oh-O5-TD2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIS EVENTOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rej-SA-45o">
+                                <rect key="frame" x="95" y="95" width="185" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Titulo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3sI-NW-pXu">
+                                <rect key="frame" x="16" y="158" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nota" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-AS-Cm4">
+                                <rect key="frame" x="16" y="206" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Inicio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E5x-ik-lz2">
+                                <rect key="frame" x="16" y="259" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fin" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oro-vf-fgo">
+                                <rect key="frame" x="16" y="310" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3sI-NW-pXu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5jW-e5-GKI"/>
+                            <constraint firstItem="rej-SA-45o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="6Tx-Do-H6j"/>
+                            <constraint firstItem="32Q-AS-Cm4" firstAttribute="top" secondItem="3sI-NW-pXu" secondAttribute="bottom" constant="18" id="AzI-Am-c6e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="32Q-AS-Cm4" secondAttribute="trailing" constant="16" id="Bcs-30-rvh"/>
+                            <constraint firstItem="oro-vf-fgo" firstAttribute="top" secondItem="E5x-ik-lz2" secondAttribute="bottom" constant="21" id="KGX-OH-1th"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jmq-sS-Fhv" secondAttribute="trailing" constant="86" id="O2o-qh-VZb"/>
+                            <constraint firstItem="3sI-NW-pXu" firstAttribute="top" secondItem="rej-SA-45o" secondAttribute="bottom" constant="29" id="PvM-qK-qEn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jmq-sS-Fhv" secondAttribute="bottom" constant="208" id="QQi-y0-wrn"/>
+                            <constraint firstItem="E5x-ik-lz2" firstAttribute="top" secondItem="32Q-AS-Cm4" secondAttribute="bottom" constant="23" id="ToP-3t-BbR"/>
+                            <constraint firstItem="oro-vf-fgo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="U9k-7S-1hR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E5x-ik-lz2" secondAttribute="trailing" constant="16" id="azT-BO-68s"/>
+                            <constraint firstItem="3sI-NW-pXu" firstAttribute="top" secondItem="rej-SA-45o" secondAttribute="bottom" constant="29" id="dSR-9R-AzT"/>
+                            <constraint firstItem="rej-SA-45o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="g0O-eT-obU"/>
+                            <constraint firstItem="E5x-ik-lz2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jM9-oX-4px"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oro-vf-fgo" secondAttribute="trailing" constant="16" id="kXI-gi-ysM"/>
+                            <constraint firstItem="32Q-AS-Cm4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lCc-oT-fL7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rej-SA-45o" secondAttribute="trailing" constant="95" id="mkv-8U-DfC"/>
+                            <constraint firstItem="Jmq-sS-Fhv" firstAttribute="top" secondItem="oro-vf-fgo" secondAttribute="bottom" constant="86" id="vSh-si-Nzy"/>
+                            <constraint firstItem="Jmq-sS-Fhv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="wKU-CW-gkf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3sI-NW-pXu" secondAttribute="trailing" constant="16" id="wmV-3y-cLb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fechaFin" destination="oro-vf-fgo" id="ksT-98-0cq"/>
+                        <outlet property="fechaInicio" destination="E5x-ik-lz2" id="ZeQ-94-ldJ"/>
+                        <outlet property="nota" destination="32Q-AS-Cm4" id="8cs-SG-v2I"/>
+                        <outlet property="titulo" destination="3sI-NW-pXu" id="ErI-n8-f92"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+</document>
