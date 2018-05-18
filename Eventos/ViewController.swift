@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  Eventos
-//
-//  Created by Jorge M. B. on 17/05/18.
-//  Copyright © 2018 Jorge M. B. All rights reserved.
-//
-
 import UIKit
 import EventKit
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var titulo: UITextField!
